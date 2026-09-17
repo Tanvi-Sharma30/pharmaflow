@@ -10,7 +10,16 @@ from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import generate_password_hash, check_password_hash
 from sqlalchemy import or_
 
-from models import db, User, Medicine, Batch, DispenseRecord, DispenseItem
+from models import (
+    db,
+    User,
+    Medicine,
+    Batch,
+    DispenseRecord,
+    DispenseItem,
+    QuarantineRecord,
+    NotificationOutbox
+)
 
 
 app = Flask(__name__)
